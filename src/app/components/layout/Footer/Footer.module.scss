@@ -1,0 +1,88 @@
+@import '../../../scss/utils/variables.scss';
+@import '../../../scss/utils/responsive.scss';
+
+.footer {
+	margin-top: 30rem;
+	@include media('<=phone') {
+		margin-top: 10rem;
+	}
+}
+
+.footer__arr__figure {
+	max-width: 11.2rem;
+	width: 11.2rem;
+
+	@include media('<=phone') {
+		width: 10rem;
+	}
+}
+
+.footer__heading__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include media('<=phone') {
+		justify-content: flex-start;
+	}
+}
+
+.footer__heading {
+	font-size: 15.3rem !important;
+
+	@include media('<=phone') {
+		font-size: 6.3rem !important;
+	}
+}
+
+.footer__contact__wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	@include media('<=phone') {
+		margin-top: 2rem;
+		flex-direction: column;
+	}
+}
+
+.footer__contact__link {
+	padding: 1.2rem 5rem;
+	border: 0.1rem solid $color-white;
+	border-radius: 10rem;
+
+	@include media('<=phone') {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.footer__dad__joke__wrapper {
+	max-width: 25rem;
+	margin-left: 3rem;
+	margin-top: 1rem;
+
+	p {
+		margin-bottom: 2rem;
+	}
+
+	@include media('<=phone') {
+		margin-left: 0rem;
+		margin-top: 2rem;
+	}
+}
+
+.footer__bottom__section {
+	padding: 2rem 0rem;
+	margin-top: 20rem;
+	border-top: 0.1rem solid rgba($color: $color-white, $alpha: 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include media('<=phone') {
+		margin-top: 10rem;
+	}
+}

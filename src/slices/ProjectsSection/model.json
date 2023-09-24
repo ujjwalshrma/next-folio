@@ -1,0 +1,29 @@
+{
+  "id": "projects_section",
+  "type": "SharedSlice",
+  "name": "ProjectsSection",
+  "description": "ProjectsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "projects": {
+          "type": "Link",
+          "config": {
+            "label": "Projects",
+            "select": "document",
+            "customtypes": [
+              "project"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

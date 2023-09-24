@@ -1,0 +1,96 @@
+{
+  "id": "project",
+  "label": "Project",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "main_project_image": {
+        "type": "Image",
+        "config": {
+          "label": "Main Project Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "project_title": {
+        "type": "Text",
+        "config": {
+          "label": "Project Title",
+          "placeholder": ""
+        }
+      },
+      "project_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Project Description",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "single": "paragraph,hyperlink,strong,em"
+        }
+      },
+      "project_labels": {
+        "type": "Group",
+        "config": {
+          "label": "Project Labels",
+          "fields": {
+            "label": {
+              "type": "Select",
+              "config": {
+                "label": "label",
+                "placeholder": "",
+                "options": ["Role", "Technology", "Date"],
+                "default_value": "Role"
+              }
+            },
+            "label_text": {
+              "type": "Text",
+              "config": {
+                "label": "Label Text",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "view_button_text": {
+        "type": "Text",
+        "config": {
+          "label": "View Button Text",
+          "placeholder": ""
+        }
+      },
+      "view_button_link": {
+        "type": "Link",
+        "config": {
+          "label": "View Button Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "project_image": {
+        "type": "Group",
+        "config": {
+          "label": "Project Image",
+          "fields": {
+            "images": {
+              "type": "Image",
+              "config": {
+                "label": "Images",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

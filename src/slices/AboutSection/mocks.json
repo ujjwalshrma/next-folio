@@ -1,0 +1,42 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"marquee_text": {
+				"__TYPE__": "FieldContent",
+				"value": "swimming",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"accordian_heading",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "log",
+							"type": "Text"
+						}
+					],
+					[
+						"accordian_content",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consequat ut eiusmod ea nulla sint nostrud Lorem quis deserunt laboris excepteur aute enim aliquip aliquip. Laboris sunt ipsum ea labore eiusmod velit eiusmod nisi magna ullamco consequat pariatur et voluptate."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,69 @@
+@import '../scss/utils/responsive.scss';
+
+.project {
+	padding-top: 21rem;
+
+	@include media('<=phone') {
+		padding-top: 15rem;
+	}
+}
+
+.project__images {
+	width: 100%;
+}
+
+.project__images__figure {
+	width: 100%;
+	margin-top: 17rem;
+
+	@include media('<=phone') {
+		margin-top: 5rem;
+	}
+}
+
+.project__main__image {
+	margin-bottom: 7rem;
+}
+
+.project__content__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 7rem;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	@include media('<=phone') {
+		gap: 4rem;
+	}
+}
+
+.project__para {
+	max-width: 50rem;
+}
+.project__labels {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.project__label {
+	min-width: 17rem;
+
+	@include media('<=phone') {
+		min-width: 13rem;
+	}
+}
+
+.label__para__wrapper {
+	@include media('<=phone') {
+		max-width: 20rem;
+	}
+}
+
+.project__label__wrapper {
+	@include media('<=phone') {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+}

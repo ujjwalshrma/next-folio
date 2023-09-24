@@ -1,0 +1,64 @@
+@import '../../../scss/utils/variables.scss';
+@import '../../../scss/utils/responsive.scss';
+
+.nav {
+	padding: 1rem 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba($color: $color-white, $alpha: 0.1);
+	backdrop-filter: blur(20px);
+	transition: all 0.4s ease;
+	border-bottom: 0.1rem solid rgba($color: $color-white, $alpha: 0.2);
+	z-index: 99999;
+}
+
+.nav__start {
+	padding: 1rem 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+	border: none;
+}
+
+.nav__link {
+	color: $color-white;
+	text-decoration: none;
+	border-bottom: none;
+	font-size: 1.3rem;
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+		border-bottom: none;
+		font-size: 1.3rem;
+
+		@include media('<=phone') {
+			font-size: 1.1rem;
+		}
+	}
+
+	@include media('<=phone') {
+		font-size: 1.1rem;
+	}
+}
+
+.nav__flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__links__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 2.5rem;
+
+	@include media('<=phone') {
+		column-gap: 1.2rem;
+	}
+}
