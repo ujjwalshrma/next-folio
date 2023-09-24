@@ -167,7 +167,7 @@ const Home = async () => {
 				<div className={styles.home__about__section} id='about'>
 					<div className={styles.home__about__section__wrapper}>
 						<div className={styles.marquee__wrapper}>
-							<Marquee gradient='true' gradientColor='#161616'>
+							<Marquee>
 								<h1 className={`${styles.about__heading} heading__1`}>
 									{aboutSection.primary.marquee_text} -
 								</h1>

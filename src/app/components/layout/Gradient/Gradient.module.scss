@@ -1,3 +1,5 @@
+@import '../../../scss/utils/responsive.scss';
+
 .gradient__wrapper {
 	display: flex;
 	align-items: center;
@@ -16,19 +18,16 @@
 	}
 
 	25% {
-		top: 4rem;
+		top: 8rem;
 	}
 
 	50% {
-		right: 20rem;
-	}
-
-	75% {
-		top: 0rem;
+		right: 10rem;
 	}
 
 	100% {
 		right: 0;
+		top: 0;
 	}
 }
 
@@ -37,16 +36,8 @@
 		left: 0;
 	}
 
-	25% {
-		top: 4rem;
-	}
-
 	50% {
 		left: 10rem;
-	}
-
-	75% {
-		top: 0rem;
 	}
 
 	100% {
@@ -55,29 +46,31 @@
 }
 
 .gradient__one {
-	width: 50rem;
-	height: 30rem;
-	border-radius: 50%;
-	background: #0381dd;
-	filter: blur(300px);
 	position: absolute;
-	right: 0;
-	top: 20rem;
+	right: -10rem;
+	margin-right: -20rem;
+	top: 0;
+	margin-top: -10rem;
+	opacity: 0.2;
+	transform: translateZ(0);
 	animation-name: gradient__1__animation;
-	animation-duration: 30s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
+	width: 120rem;
+	height: 100rem;
 }
 
 .gradient__two {
-	width: 50rem;
-	height: 30rem;
-	border-radius: 50%;
-	background: #96572d;
-	filter: blur(300px);
+	opacity: 0.2;
+	margin-left: -10rem;
+	margin-top: -20rem;
 	position: absolute;
+	top: 0;
 	left: 0;
-	top: -10rem;
+	transform: translateZ(0);
 	animation-name: gradient__2__animation;
-	animation-duration: 30s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
+	width: 100rem;
+	height: 80rem;
 }
