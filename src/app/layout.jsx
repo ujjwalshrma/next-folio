@@ -5,6 +5,7 @@ import { repositoryName } from '@/prismicio'
 
 import Navigation from './components/layout/Navigation/Navigation'
 import Footer from './components/layout/Footer/Footer'
+import Gradient from './components/layout/Gradient/Gradient'
 
 import './scss/globals.scss'
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body className={`${inter.variable} ${dahlia.variable}`}>
 				<Navigation />
+				<Gradient />
 				<div className='content' id='content'>
 					{children}
 					<PrismicPreview repositoryName={repositoryName} />
