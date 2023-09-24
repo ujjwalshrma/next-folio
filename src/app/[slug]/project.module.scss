@@ -40,6 +40,7 @@
 .project__para {
 	max-width: 50rem;
 }
+
 .project__labels {
 	display: flex;
 	flex-direction: column;
@@ -61,9 +62,7 @@
 }
 
 .project__label__wrapper {
-	@include media('<=phone') {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
