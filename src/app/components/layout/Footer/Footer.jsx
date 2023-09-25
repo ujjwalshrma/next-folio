@@ -27,7 +27,7 @@ const Footer = () => {
 					<div className={styles.footer__dad__joke__wrapper}>
 						<p className='para'>
 							&quot;What do you call a fish wearing a bowtie?&quot;
-							&quot;Sofish&quot;.
+							&quot;Sofishticated&quot;.
 						</p>
 						<p className='para small'>RANDOM DAD JOKE</p>
 					</div>
